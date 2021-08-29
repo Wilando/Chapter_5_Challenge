@@ -25,7 +25,7 @@ function index(req, res){
 
 function game(req, res){
   res.status(200);
-  return res.sendFile(( path.join(__dirname, './views/permainan.html') ));
+  return res.render('permainan');
 }
 
 function login(req, res){
