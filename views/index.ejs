@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>CHALANGGE</title>
+  </head>
+  <body>
+<!-- --------------------------------------MAIN SCREEN------------------------------------------ -->
+    <div class="main_screen">
+      <ul class="nav">
+        <div class="container-fluid py-2" style="background: rgba(0, 0, 0, 0.5)">
+          <div class="container">
+            <div class="row">
+              <div class="col-1">
+                <li class="nav-item">
+                  <a class="navbar-brand active" aria-current="page" href="#">LOGO</a>
+                </li>
+              </div>
+              <div class="col-1 offset-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOME</a>
+                </li>
+              </div>
+              <div class="col-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">WORK</a>
+                </li>
+              </div>
+              <div class="col-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </div>
+              <div class="col-1">
+                <li class="nav-item">
+                  <a class="nav-link text-nowrap" href="#" >ABOUT ME</a>
+                </li>
+              </div>
+              <% if (statusLogin) { %>
+              <div class="col-1 offset-3">
+                <li class="nav-item">
+                  <a class="nav-link text-nowrap email" href="#"><%= nama %></a>
+                </li>
+              </div>
+              <div class="col-1 offset-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">LOGOUT</a>
+                </li>
+              </div>
+              <%} else { %>
+              <div class="col-1 offset-4">
+                <li class="nav-item">
+                  <a class="nav-link text-nowrap" href="/signup">SIGN UP</a>
+                </li>
+              </div>
+              <div class="col-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">LOGIN</a>
+                </li>
+              </div>
+              <% }%>  
+            </div>
+          </div>
+        </div>
+      </ul>
+      <div class="container-fluid py-5">
+        <div class="container mt-4">
+          <div class="row pt-5">
+            <div class="col-12">
+              <h1 class="Play_Traditional_Game">Play Traditional Game</h1>
+            </div>
+            <div class="col-12 text-center py-4">
+              <h3 class="Experience_new_traditional_game_play">Experience new traditional game play</h3>
+            </div>
+            <div class="col-12 text-center">
+              <% if (statusLogin) { %>
+              <button type="button" class="btn" onclick="location.href='/game'">TRIAL</button>
+              <%} else { %>
+              <button type="button" class="btn" onclick="belumLogin()">TRIAL</button>
+              <% }%> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row pt-5">
+          <div class="col-12 text-center mt-5">
+            <button class="btn_the_story pt-5"><span class="the_story">The story</span></button>
+          </div>
+          <div class="col-12 text-center">
+            <svg class="scroll_down" width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.5786 1.83362H1.32422L11.338 10.0027L21.5786 1.83362Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<!-- -----------------------------------------ABOUT+GALERY------------------------------------ -->    
+    <div class="aboutandgalery">
+
+      <div class="container-fluid py-5">
+
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col">
+              <h3 class="What’s_so_special">What’s so special?</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3 text-nowrap ">
+              <h1 class="THE_GAMES">THE GAMES</h1>
+            </div>
+            <div class="col-8 offset-1" >
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="rockpaperstrategy-1600.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="rockpaperstrategy-1600.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="rockpaperstrategy-1600.jpg">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+
+<!-- ---------------------------------------GAME FEATURE-------------------------------------- -->
+    <div class="game_feature" >
+
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-6 offset-6 ">
+              <h3 class="What’s_so_special">What’s so special?</h3>
+            </div>
+            <div class="col-6 offset-6">
+              <h1 class="THE_GAMES">FEATURES</h1>
+            </div>
+            <div class="col-6 offset-6 pt-5">
+              <div class="row">
+                <div class="col-1">
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="8.62158" cy="7.78027" r="7" transform="rotate(90 8.62158 7.78027)" fill="white" stroke="white" stroke-width="1.30637"/>
+                  </svg>
+                </div>
+                <div class="col-3">
+                  <h3 class="feature text-nowrap">TRADITIONAL GAMES</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 offset-6">
+              <div class="row">
+                <div class="col-1 px-3">
+                  <span class="vertical-line"></span>
+                </div>
+                <div class="col-4 text-justify">
+                  <p class="childhood text-nowrap">If you miss your childhood, we provide<br>many traditional games here</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 offset-6">
+              <div class="row">
+                <div class="col-1">
+                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="8.21436" cy="8.54736" r="7" transform="rotate(90 8.21436 8.54736)" stroke="white" stroke-width="1.30637"/>
+                  </svg>
+                </div>
+                <div class="col-4">
+                  <h3 class="feature">GAME SUIT</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 offset-6 pt-5">
+              <div class="row">
+                <div class="col-1">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8.21436" cy="8.54736" r="7" transform="rotate(90 8.21436 8.54736)" stroke="white" stroke-width="1.30637"/>
+                </svg>
+              </div>
+              <div class="col-1">
+                <h3 class="feature">TBD</h3>
+              </div>
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+
+<!-- -------------------------------------------SYSTEM REQUIMENT------------------------------ -->
+  
+    <div class="syst_req" >
+      
+      <div class="container-fluid">
+        
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-12 text-center">
+              <h3 class="Can_My_Computer_Run_this_game">Can My Computer Run this game? </h3>
+            </div>
+          </div>
+
+          <div class="row py-3">
+            <div class="col-4">
+              <h1 class="SYSYTEM_REQUIRMENT"> SYSYTEM REQUIRMENT</h1>
+            </div>
+          </div>
+
+          <div class="row" style="background-image: url(./assets/disquette.svg); background-repeat: no-repeat;">
+              <div class="row pt-2">
+                <div class="col-3">
+                  <p class="requir-text"> OS:</p>
+                  <p class="text-requir">Windows 7 64-bit only (No OSX support at this time)</p>
+                </div>
+                <div class="col-3">
+                  <p class="requir-text">PROCESSOR:</p>
+                  <p class="text-requir">Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+                </div>
+              </div>
+            
+            <div class="row pt-3">
+              <div class="col-3">
+                <p class="requir-text">MEMORY:</p>
+                <p class="text-requir">4 GB RAM</p>
+              </div>
+              <div class="col-3">
+                <p class="requir-text">STORAGE:</p>
+                <p class="text-requir">8 GB available space</p>
+              </div>
+              <div class="row pt-5">
+                <p class="requir-text">GRAPHICS:</p>
+                <div class="col-3 pb-5">
+                  <p class="text-requir text-nowrap">NVIDIA GeForce GTX 660 2GB or<br>AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+<!-- -----------------------------------------PRESS QUOTES------------------------------------ -->
+    <div class="quotes">
+
+      <div class="container-fluid py-5">
+          <div class="container mt-2">
+            
+            <div class="row">
+              <div class="col-4 offset-7">
+                
+                <div class="card text-white" style="z-index:0; width: 29rem;">
+                  <div class="card-body">
+                    <div class="row card-text">
+                      <div class="col">
+                        <img src="./assets/quote_photo.jpg" class="rounded-circle img-fluid float-start" style="z-index:1;">
+                        <img src="./assets/Ellipse.svg" class="img-fluid float-start" style="z-index:-1; position: absolute; left: 7%; bottom: 53%;">
+                        <div class="row">
+                          <div class="col offset-3">
+                            <p class="nama_quote text-nowrap">Evan Lahti<br><span class="pekerjaan">PC Gamer</span></p>       
+                          </div> 
+                        </div>
+
+                      </div>
+                      <div class="col-5 pl-5 text-end">
+                        <img src="./assets/twitter.svg">
+                      </div>
+                    </div>
+                    <p class="review text-nowrap">“One of my gaming highlights of the year.”</p>
+                    <p class="tanggal">June 18, 2021</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+<!----------------------------------------------------------------------------------------->
+            <div class="row py-3">
+              
+              <div class="col-5">
+                <h1 class="top_score">TOP SCORE</h1>
+                <p class="this_top">This top score from various games provided <br>on this platform</p>
+                <button type="button" class="btn">see more</button>
+              </div>
+
+              <div class="col-4">
+                <div class="card text-white" style="z-index:0; width: 29rem;">
+                  <div class="card-body">
+                    <div class="row card-text">
+                      <div class="col">
+                        <img src="./assets/quote_photo_2.jpg" class="rounded-circle img-fluid float-start" style="z-index:1; height: 69%;">
+                        <img src="./assets/Ellipse.svg" class="img-fluid float-start" style="z-index:-1; position: absolute; left: 7%; bottom: 59%;">
+                        <div class="row">
+                          <div class="col offset-3">
+                            <p class="nama_quote text-nowrap">Jada Griffin<br><span class="pekerjaan">Nerdreactor</span></p>       
+                          </div> 
+                        </div>
+
+                      </div>
+                      <div class="col-5 pl-5 text-end">
+                        <img src="./assets/twitter.svg">
+                      </div>
+                    </div>
+                    <p class="review text-nowrap">“The next big thing in the world of streaming<br>and survival games.”</p>
+                    <p class="tanggal">July 10, 2021</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+<!----------------------------------------------------------------------------------------->
+            <div class="row">
+              
+              <div class="col-4 offset-7">
+
+                <div class="card text-white" style="z-index:0; width: 29rem;">
+                  <div class="card-body">
+                    <div class="row card-text">
+                      <div class="col">
+                        <img src="./assets/quote_photo_3.jpg" class="rounded-circle img-fluid float-start" style="z-index:1; height: 70%;">
+                        <img src="./assets/Ellipse.svg" class="img-fluid float-start" style="z-index:-1; position: absolute; left: 7%; bottom: 59%;">
+                        <div class="row">
+                          <div class="col offset-3">
+                            <p class="nama_quote text-nowrap">Aaron Williams<br><span class="pekerjaan">Uproxx</span></p>       
+                          </div> 
+                        </div>
+
+                      </div>
+                      <div class="col-5 pl-5 text-end">
+                        <img src="./assets/twitter.svg">
+                      </div>
+                    </div>
+                    <p class="review text-nowrap">“Snoop Dogg Playing The Wildly Entertaining<br>‘SOS’ Is Ridiculous.”</p>
+                    <p class="tanggal">December 24, 2018</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+
+<!-- -------------------------------------------SUBSCRIBE + FOOTER---------------------------------------------- -->
+
+      <div class="subscribe" >
+        
+
+        <div class="container-fluid">
+          <div class="container">
+
+            <div class="row align-middle pt-5">
+
+              <div class="col mt-5">
+                <img src="./assets/gambar.png">
+              </div>
+
+              <div class="col offset-1 mt-5 pt-5">
+                <div class="row">
+                  <h3 class="Want">Want to stay in touch?</h3>
+                </div>
+                <div class="row my-3">
+                  <h1 class="newsletter">newsletter SUBSCRIBE</h1>
+                </div>
+                <div class="row">
+                  <p class="text_subs">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <form class="form-floating">
+                      <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="youremail@binar.co,id">
+                      <label for="floatingInputValue">Your email address</label>
+                    </form>
+                  </div>
+                  <div class="col">
+                    <button type="button" class="btn">Subscribe now</button>
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+    
+
+      </div>
+
+    <footer>
+      <div class="container-fluid py-3" style="background-color: #080A0B;">
+        
+      <div class="container">
+        <div class="row">
+          <div class="col offset-2">
+            <ul class="text-footer list-inline">
+              <li class="list-inline-item">
+                <a class="" href="#">Main</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Game feature</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">System requirements</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">quotes</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><img src="./assets/facebook.svg"></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><img src="./assets/twitter.svg"></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><img src="./assets/Vector.svg"></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><img src="./assets/twitch.svg"></a>
+              </li>
+            </ul>
+          </div>
+          <hr style="opacity: 0.5; border: 0.873968px solid #FFFFFF;">
+        </div>
+        
+        <div class="row">
+          <div class="col">
+            <p class="copyright-text"> © 2018 Your Games, Inc. All Rights Reserved.</p>
+          </div>
+          <div class="text-footer col offset-5">
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Services</a> | <a href="#">Code of Conduct</a> </p>
+          </div>
+          
+        </div>
+      </div>
+      
+
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/algoritma.js"></script>
+
+  </body>
+</html>

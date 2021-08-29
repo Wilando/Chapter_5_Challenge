@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style_permainan.css">
+
+
+    <title>Permainan</title>
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+        <header>
+            <a href="#" onclick="goBack()" class="back"><</a>
+            <img src="./assets/logo.png" alt="logo">
+            <p>ROCK PAPER SCISSORS</p>
+        </header>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="col-auto">
+                        <p class="player">PLAYER 1</p>
+                    </div>
+                    <div class="col-auto">
+                        <img src="./assets/batu1.png" alt="batu" id="batu" class="player1" onclick="hasil_permainan('batu')">
+                    </div>
+                    <div class="col-auto">
+                        <img src="./assets/kertas1.png" alt="kertas" id="kertas" class="player1" onclick="hasil_permainan('kertas')">
+                    </div>
+                    <div class="col-auto">
+                        <img src="./assets/gunting1.png" alt="gunting" id="gunting" class="player1" onclick="hasil_permainan('gunting')">
+                    </div>   
+                </div>
+                <div class="col-auto align-self-center me-5 ms-5">
+                    <p class="vs" id="VS">VS</p>
+                </div>
+                <div class="col-auto">
+                    <div class="col-auto">
+                        <p class="player">COM</p>
+                    </div>
+                    <div class="col-auto">
+                        <img src="./assets/batu1.png" alt="batu" id="com_batu">
+                    </div>
+                    <div class="col-auto">
+                        <img src="./assets/kertas1.png" alt="kertas" id="com_kertas">
+                    </div>
+                    <div class="col-auto">
+                        <img src="./assets/gunting1.png" alt="gunting" id="com_gunting">
+                    </div>   
+                </div>
+            </div>      
+        </div>
+        <img src="./assets/refresh1.png" alt="" class="refresh d-flex justify-content-center" onclick="refresh()">
+    </div>
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="./js/algoritma.js"></script>
+
+  </body>
+</html>

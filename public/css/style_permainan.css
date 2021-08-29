@@ -1,0 +1,90 @@
+.container-fluid {
+    height: 100vh;
+    background-size: cover;
+    background-color: #9C835F;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0.80%;
+}
+
+.container-fluid header p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #F9B23D;
+    padding-left: 2%;
+}
+
+.back {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #724C21;
+    padding-left: 2%;
+}
+
+.container-fluid header img {
+    padding-left: 2%;
+}
+
+.row img {
+    width: 128px;
+    height: 92px;
+    padding: 2em;
+    box-sizing: content-box;
+}
+
+.player1:hover {
+    box-sizing: content-box !important;
+    background: #C4C4C4 !important;
+    border-radius: 30px !important;
+}
+
+.vs {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 144px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #BD0000;
+}
+
+.player {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.refresh {
+    width: 77px;
+    height: 71px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.refresh:hover {
+    box-sizing: content-box;
+    background: #C4C4C4;
+    border-radius: 30px;
+}
+

@@ -1,0 +1,362 @@
+
+
+.main_screen{
+      height: 100vh;
+      background-size: cover;
+      background-image: url(./../assets/main-bg.jpg);
+      background-color: #080A0B;
+}
+
+.nav-link {
+	font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.navbar-brand {
+	font-family: Open Sans;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+
+.Play_Traditional_Game {
+   	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 83px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.Experience_new_traditional_game_play {
+	
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 2px;
+
+	color: #FFFFFF;
+}
+
+.btn {
+
+	background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1917;
+    height: 60px;
+    width: 260.36px;
+}
+
+.btn_the_story {
+      background-color: Transparent;
+      background-repeat:no-repeat;
+      border: none;
+      cursor:pointer;
+}
+
+.the_story{
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 22px;
+      text-align: justify;
+      color: #FFFFFF;
+      text-transform: uppercase;
+}
+
+.aboutandgalery {
+	height: 100vh;
+    background-size: cover;
+    background-image: url(./../assets/the-games-bg.jpg);
+}
+
+.What’s_so_special {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 2px;
+
+	color: #FFFFFF;
+}
+
+.THE_GAMES {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 56px;
+	line-height: 64px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.game_feature {
+    	height: 100vh;
+    	background-size: cover;
+   	background-image: url(./../assets/features2.jpg);
+}
+
+.feature {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 2px;
+
+	color: #FFB548;
+}
+
+.childhood {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: justify;
+
+	color: #FFFFFF;
+}
+
+.vertical-line {
+	display: inline-block;
+	border-left: 2.9px solid #FFFFFF;
+	margin: 0 15%;
+	height: 110%;
+}
+
+
+.syst_req {
+	height: 100vh;
+      background-size: cover;
+      background-image: url(./../assets/requirements.png);
+}
+
+.requir-text {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 2px;
+	color: #FFB548;
+}
+
+.text-requir {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+
+.Can_My_Computer_Run_this_game {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 2px;
+
+	color: #FFFFFF;
+}
+
+.SYSYTEM_REQUIRMENT {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 56px;
+	line-height: 64px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.quotes {
+      height: 100vh;
+      background-size: cover;
+      background-image: url(./../assets/top-score-bg.jpg);  
+}
+
+.nama_quote{
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height */
+
+letter-spacing: 2px;
+
+color: #FFB548;
+}
+
+.pekerjaan {
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* or 122% */
+
+text-align: justify;
+
+color: #FFFFFF;
+
+opacity: 0.5;
+}
+
+.review {
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+
+color: #FFFFFF;
+}
+
+.tanggal {
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.5;
+}
+
+.top_score {
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 56px;
+line-height: 64px;
+letter-spacing: 3px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.this_top {
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* or 122% */
+color: #FFFFFF;
+}
+
+.card{
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.subscribe {
+      height: 100vh;
+      background-size: cover;
+      background-color: #080A0B;
+      background-image: url(./../assets/bg_image_subscribe.jpg);    
+}
+
+
+
+form {
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.form-control {
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.form-floating {
+	background: rgba(255, 255, 255, 0.08);	
+}
+
+.list-inline-item{
+	margin-left: 4%;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.text-footer{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.Want {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+}
+
+.newsletter {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 65px;
+	line-height: 75px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.text_subs {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+
+.email {
+
+	font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 16px;
+    color: #FFFFFF;
+}
